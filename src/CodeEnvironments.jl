@@ -47,7 +47,8 @@ end
 function Base.show(io::IO, env::CodeEnvironment)
     manifest_nlines = sum(isequal('a'), env.manifest)
     print(io, env.fullname, "\n",
-          "With project declaration and explicit dependencies (Project.toml):\n", env.project,
+          "With project declaration and explicit dependencies (Project.toml):\n",
+          env.project,
           "(+ detailed manifest of ", manifest_nlines, " lines)\n")
 end
 

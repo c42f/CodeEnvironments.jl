@@ -18,7 +18,7 @@ environment where you can add packages as needed. Let's add StaticArrays and
 Unitful:
 
 ```julia
-using Pkg CodeEnvironments
+using Pkg, CodeEnvironments
 pkg"activate staging"
 pkg"add StaticArrays Unitful"
 ```
