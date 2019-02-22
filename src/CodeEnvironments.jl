@@ -65,15 +65,15 @@ function check_environment(env)
         return
     end
 
-    project_ok  = env.project != read(project_path, String)
-    manifest_ok = env.manifest != read(manifest_path, String)
+    project_ok  = env.project == read(project_path, String)
+    manifest_ok = env.manifest == read(manifest_path, String)
 
     if !project_ok || !manifest_ok
         @error """
                Your code environment is inconsistent - it appears you have
                $(!project_ok ?
-                 "updated the package versions in it manually." :
-                 "added or removed packages from it manually.")
+                 "added or removed packages from it manually." :
+                 "updated the package versions in it manually.")
 
                We have loaded your installed version of this environment anyway
                but it is no longer a faithful copy of the reference environment!
