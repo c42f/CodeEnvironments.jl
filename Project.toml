@@ -1,7 +1,15 @@
 name = "CodeEnvironments"
 uuid = "c8d76d4c-29dd-56d0-8615-f2215ad43afe"
-authors = ["Chris Foster <chris.foster@tri.edu.au>"]
+authors = ["Chris Foster <chris42f@gmail.com>"]
 version = "0.1.0"
+
+[compat]
+julia = "1.0"
+
+[deps]
+Base64 = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
